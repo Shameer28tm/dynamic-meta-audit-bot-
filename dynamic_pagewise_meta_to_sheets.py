@@ -12,7 +12,7 @@ SPREADSHEET_ID = "1opy0hnidSahD7a_-ecxtOFwhYkaY7P6sElPfxkfzNdk"
 CREDENTIALS_FILE = "google_credentials.json"
 
 # ================== GOOGLE AUTH ==================
-
+# Set up Google Sheets API client
 scopes = ["https://www.googleapis.com/auth/spreadsheets"]
 creds = Credentials.from_service_account_file(CREDENTIALS_FILE, scopes=scopes)
 client = gspread.authorize(creds)
